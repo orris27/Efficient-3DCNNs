@@ -1,0 +1,16 @@
+python main.py --root_path ./ \
+	--video_path datasets/UCF101_jpg/ \
+	--annotation_path annotation_UCF101/ucf101_01.json \
+	--result_path results \
+	--dataset ucf101 \
+	--n_classes 101 \
+	--model mobilenet \
+	--width_mult 0.5 \
+	--train_crop random \
+	--learning_rate 0.1 \
+	--sample_duration 16 \
+	--downsample 2 \
+	--batch_size 4 \
+	--n_threads 16 \
+	--checkpoint 1 \
+	--n_val_samples 1 \
